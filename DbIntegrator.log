@@ -73,3 +73,50 @@ Traceback (most recent call last):
     print(category_array)
           ^^^^^^^^^^^^^^
 UnboundLocalError: cannot access local variable 'category_array' where it is not associated with a value
+2023-11-30 20:51:25,165 INFO : Traitement du fichier files/Client.xml
+2023-11-30 20:51:25,242 ERROR : cannot access local variable 'category_array' where it is not associated with a value
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 60, in run
+    print(category_array)
+          ^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'category_array' where it is not associated with a value
+2023-11-30 20:52:25,105 INFO : Traitement du fichier files/Client.xml
+2023-11-30 20:52:26,081 INFO : Traitement terminé
+2023-11-30 20:52:50,325 INFO : Traitement du fichier files/Client.xml
+2023-11-30 20:52:50,965 INFO : Traitement terminé
+2023-11-30 20:55:57,992 INFO : Traitement du fichier files/Client.xml
+2023-11-30 20:56:06,103 INFO : Traitement terminé
+2023-11-30 20:57:04,408 INFO : Traitement du fichier files/Client.xml
+2023-11-30 20:57:05,090 INFO : Traitement terminé
+2023-11-30 20:58:01,172 INFO : Traitement du fichier files/Client.xml
+2023-11-30 20:58:01,829 INFO : Traitement terminé
+2023-11-30 21:00:49,664 INFO : Traitement du fichier files/Client.xml
+2023-11-30 21:00:50,235 INFO : Traitement terminé
+2023-11-30 21:01:16,570 INFO : Traitement du fichier files/Client.xml
+2023-11-30 21:01:17,104 INFO : Traitement terminé
+2023-11-30 21:01:55,941 INFO : Traitement du fichier files/Client.xml
+2023-11-30 21:01:56,455 INFO : Traitement terminé
+2023-11-30 21:04:14,135 INFO : Traitement du fichier files/Client.xml
+2023-11-30 21:04:14,637 INFO : Traitement terminé
+2023-11-30 21:12:44,050 INFO : Traitement du fichier files/Client.xml
+2023-11-30 21:12:44,578 INFO : Traitement terminé
+2023-11-30 21:13:06,904 INFO : Traitement du fichier files/Client.xml
+2023-11-30 21:13:07,485 INFO : Traitement terminé
+2023-11-30 21:19:55,276 INFO : Traitement du fichier files/Client.xml
+2023-11-30 21:19:56,203 INFO : Traitement terminé
+2023-11-30 21:24:02,646 INFO : Traitement du fichier files/Client.xml
+2023-11-30 21:24:03,551 INFO : Traitement terminé
+2023-11-30 21:36:06,671 INFO : Traitement du fichier files/Client.xml
+2023-11-30 21:36:07,257 INFO : Traitement terminé
+2023-11-30 21:37:28,692 INFO : Traitement du fichier files/Client.xml
+2023-11-30 21:37:29,240 INFO : Traitement terminé
+2023-11-30 21:39:09,630 INFO : Traitement du fichier files/Client.xml
+2023-11-30 21:39:10,170 INFO : Traitement terminé
+2023-11-30 21:41:05,620 INFO : Traitement du fichier files/Client.xml
+2023-11-30 21:41:06,199 INFO : Traitement terminé
+2023-11-30 21:45:58,252 INFO : Traitement du fichier files/Client.xml
+2023-11-30 21:45:58,827 INFO : Traitement terminé
+2023-11-30 21:46:28,905 INFO : Traitement du fichier files/Client.xml
+2023-11-30 21:46:29,720 INFO : Traitement terminé
+2023-11-30 21:54:05,460 INFO : Traitement du fichier files/Client.xml
+2023-11-30 21:54:06,373 INFO : Traitement terminé

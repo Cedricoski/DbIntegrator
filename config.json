@@ -1,6 +1,7 @@
 {
   "XMLPATH": "files",
   "OUTPUT": "output",
+  "OUTPUTKCP": "output_kcp",
   "OLDBASES": [
     "APPRO",
     "CLIENT",
