@@ -1,27 +1,13 @@
-2023-11-27 15:18:26,175 INFO : Traitement du fichier files/Client.xml
-2023-11-27 15:18:26,681 INFO : Traitement terminé
-2023-11-27 15:18:26,681 INFO : Traitement du fichier files/Client2.xml
-2023-11-27 15:18:26,761 ERROR : 'Code client'
+2023-11-30 15:22:59,254 INFO : Traitement du fichier files/Client.xml
+2023-11-30 15:22:59,709 INFO : Traitement terminé
+2023-11-30 15:24:00,498 INFO : Traitement du fichier files/Client.xml
+2023-11-30 15:24:00,921 INFO : Traitement terminé
+2023-11-30 15:25:16,532 INFO : Traitement du fichier files/Client.xml
+2023-11-30 15:25:16,642 ERROR : 'Name'
 Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 44, in run
-    child.attrib['Name'] = self.categories['CLIENT'][child.attrib['Name']]
-                           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-KeyError: 'Code client'
-2023-11-27 15:22:15,576 INFO : Traitement du fichier files/Client.xml
-2023-11-27 15:22:16,067 INFO : Traitement terminé
-2023-11-27 15:22:16,067 INFO : Traitement du fichier files/Client2.xml
-2023-11-27 15:22:16,135 ERROR : 'Code client'
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 45, in run
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 54, in run
     child.attrib['Name'] = self.categories[base][child.attrib['Name']]
-                           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-KeyError: 'Code client'
-2023-11-27 15:50:49,397 INFO : Traitement du fichier files/Client.xml
-2023-11-27 15:50:49,825 INFO : Traitement terminé
-2023-11-27 15:50:49,825 INFO : Traitement du fichier files/Client2.xml
-2023-11-27 15:50:49,895 ERROR : 'Code client'
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 45, in run
-    child.attrib['Name'] = self.categories[base][child.attrib['Name']]
-                           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-KeyError: 'Code client'
+                                                 ~~~~~~~~~~~~^^^^^^^^
+KeyError: 'Name'
+2023-11-30 15:26:10,736 INFO : Traitement du fichier files/Client.xml
+2023-11-30 15:26:11,174 INFO : Traitement terminé

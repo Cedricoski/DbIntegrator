@@ -33,33 +33,46 @@ class DbIntegrator:
             files = os.listdir(self.xml_path)
             # tree = ET.parse('files/Client.xml')
             for file in files:
-                file_with_fullpath = self.xml_path + '/' + file
-                logging.info(f'Traitement du fichier {file_with_fullpath}')
-                if os.path.isfile(file_with_fullpath) and file_with_fullpath.endswith('.xml'):
-                    tree = ET.parse(file_with_fullpath)
-                    root = tree.getroot()
-                    category = root.findall(".//Object/Tag/TagIndex/Category")
+                n = 0
+                base_from_filename = file.split('.xml')[0].upper()
+                if base_from_filename in base:
+                    file_with_fullpath = self.xml_path + '/' + file
+                    logging.info(f'Traitement du fichier {file_with_fullpath}')
+                    if os.path.isfile(file_with_fullpath) and file_with_fullpath.endswith('.xml'):
+                        tree = ET.parse(file_with_fullpath)
+                        root = tree.getroot()
+                        tagIndex = root.findall(".//Object/Tag/TagIndex")
+                        # category = root.findall(".//Object/Tag/TagIndex/Category")
 
-                    for child in category:
-                        number = child.find(".//number")
-                        child.attrib['Name'] = self.categories[base][child.attrib['Name']]
-                        number.text = self.bases['AUTRES'].get(child.attrib['Name'])
+                        # value = [val.text for val in root.findall(".//Value/string")]
+                        for tag in tagIndex:
+                            category = tag.findall(".//Category")
+                            value = tag.findall(".//Value/string")
 
-                    output_file = self.output + '/' + file
-                    tree.write(output_file, encoding="UTF-8", xml_declaration=True)
+                            for child in category:
+                                number = child.find(".//number")
+                                child.attrib['Name'] = self.categories[base][child.attrib['Name']]
+                                number.text = self.bases['AUTRES'].get(child.attrib['Name'])
+                            for val in value:
+                                val.text = f"Test {str(n)}"
+                            n = n + 1
+                        output_file = self.output + '/' + file
+                        tree.write(output_file, encoding="UTF-8", xml_declaration=True)
 
-                    f = open(output_file, 'r')
-                    content = f.readlines()
-                    f.close()
-                    final_content = content[:1]
-                    final_content.append(
-                        '<!DOCTYPE Exchange PUBLIC "-//APROGED//DTD EIDE DTD 19990607 Vers 1.0//FR"  "docubase.dtd">\n')
+                        f = open(output_file, 'r')
+                        content = f.readlines()
+                        f.close()
+                        final_content = content[:1]
+                        final_content.append(
+                            '<!DOCTYPE Exchange PUBLIC "-//APROGED//DTD EIDE DTD 19990607 Vers 1.0//FR"  "docubase.dtd">\n')
 
-                    final_content.extend(content[1:])
-                    f = open(output_file, 'w')
-                    f.writelines(final_content)
-                    f.close()
-                    logging.info('Traitement terminé')
+                        final_content.extend(content[1:])
+                        f = open(output_file, 'w')
+                        f.writelines(final_content)
+                        f.close()
+                        logging.info('Traitement terminé')
+                else:
+                    continue
         except Exception as e:
             logging.exception(e)
             return False

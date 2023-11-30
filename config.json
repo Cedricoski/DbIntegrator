@@ -3,7 +3,8 @@
   "OUTPUT": "output",
   "OLDBASES": [
     "APPRO",
-    "CLIENT"
+    "CLIENT",
+    "DRH"
   ],
   "BASES": {
     "AUTRES": {
@@ -178,7 +179,7 @@
       "Type document": "Sous dossier",
       "Société": "Societe",
       "Matricule": "Matricule",
-      "Nom et prénoms": "Nom et prenoms",
+      "Nom et prénoms": "Nom prenoms",
       "Sous dossier": "Sous dossier",
       "Statut": "Statut",
       "Objet": "Nom document",
@@ -186,6 +187,96 @@
       "Date": "Date document",
       "Numéro document": "Numero document",
       "Etat": "Etat"
+    },
+    "DTRANSIT": {
+      "Type de document": "Nom document",
+      "Numéro OA": "Numero OA",
+      "Numéro Commande": "Numero commande",
+      "Numéro Facture": "Numero facture",
+      "Date facture": "Date document",
+      "Nature document": "Nature document"
+    },
+    "EXPORT": {
+      "Type de document": "Nom document",
+      "Code Export": "Code export",
+      "Code client": "Code client",
+      "Numéro Bon de commande": "Numero commande",
+      "Numéro Facture": "Numero facture",
+      "Nature document": "Nature document",
+      "Objet": "Objet",
+      "Date fin validité": "Date peremption/Sortie",
+      "Statut": "Statut"
+    },
+    "FACTURE": {
+      "NATURE": "Nom document",
+      "SOCIETE": "Societe",
+      "DIRECTION": "Direction",
+      "SERVICE": "Service",
+      "ORIGINE": "Origine",
+      "DATE_DEPOT": "Date depot",
+      "FOUR_COMPTE": "Code fournisseur",
+      "FOUR_CONTRIBUABLE": "Compte contribuable",
+      "FOUR_NOM": "Nom fournisseur",
+      "FACT_NUMERO": "Numero facture",
+      "FACT_DATE": "Date document",
+      "DEVISE": "Devise",
+      "TOTAL_TTC": "Montant TTC",
+      "NUMERO_PIECE": "Numero piece",
+      "ANNEE": "Annee",
+      "CODE_PROJET": "Code projet",
+      "CODE_JOURNAL": "Journal"
+    },
+    "FISCALE": {
+      "Type de document": "Nom document",
+      "Société": "Societe",
+      "Année": "Annee",
+      "Mois": "Periode",
+      "Nature": "Nature document"
+    },
+    "NOTESERV": {
+      "Type document": "Nom document",
+      "Direction émettrice": "Expediteur",
+      "Destinataire(s)": "Destinataire",
+      "Objet": "Objet",
+      "Date": "Date document",
+      "Reference": "Reference document",
+      "Numéro": "Numero document",
+      "Notification": "Notification",
+      "Société": "Societe",
+      "Etablissement": "Etablissement"
+    },
+    "POURVOIR": {
+      "Type de document": "Nom document",
+      "Direction": "Direction",
+      "Fonction": "Fonction",
+      "Matricule": "Matricule",
+      "Nom et prénoms": "Nom prenoms",
+      "Lieu affectation": "Localisation",
+      "Périodicité": "Periode",
+      "Reference note service": "Reference document",
+      "Date": "Date document",
+      "Date début validité": "Date debut validite/Mise en service",
+      "Date fin validité": "Date peremption/Sortie",
+      "Statut": "Statut"
+    },
+    "REGLFOUR": {
+      "FOURNISSEUR": "Nom fournisseur",
+      "NATURE DOCUMENT": "Nom document",
+      "BANQUE": "Banque",
+      "DATE": "Date document",
+      "MOIS": "Periode",
+      "ANNEE": "Annee",
+      "REFERENCE REGLEMENT": "Reference document",
+      "NOTIFICATION": "Notification",
+      "ORIGINE FOURNISSEUR": "Origine",
+      "CODE FOURNISSEUR": "Code fournisseur",
+      "NUMERO CONTRIBUABLE": "Compte contribuable",
+      "NUMERO FACTURE": "Numero facture"
+    },
+    "VISUELS": {
+      "Type de document": "Nom document",
+      "Code article": "Code article",
+      "Désignation": "Designation"
     }
   }
 }
