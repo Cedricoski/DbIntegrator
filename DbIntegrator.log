@@ -115,3 +115,80 @@ Traceback (most recent call last):
 TypeError: list.count() takes exactly one argument (0 given)
 2023-11-30 16:19:06,687 INFO : Traitement du fichier files/Client.xml
 2023-11-30 16:19:07,136 INFO : Traitement terminé
+2023-11-30 16:22:10,074 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:22:10,849 ERROR : name 'data' is not defined
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 78, in run
+    self.create_xml(name_array, tagIndex, name_array, file)
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 94, in create_xml
+    for j in range(0, len(data)):
+                          ^^^^
+NameError: name 'data' is not defined. Did you mean: 'datas'?
+2023-11-30 16:23:47,328 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:23:47,852 ERROR : list index out of range
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 78, in run
+    self.create_xml(name_array, tagIndex, name_array, file)
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 97, in create_xml
+    field.setAttribute('value', value[j])
+                                ~~~~~^^^
+IndexError: list index out of range
+2023-11-30 16:27:54,314 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:27:54,807 ERROR : list index out of range
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 78, in run
+    self.create_xml(name_array, tagIndex, name_array, file)
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 97, in create_xml
+    field.setAttribute('value', value[j])
+                                ~~~~~^^^
+IndexError: list index out of range
+2023-11-30 16:32:08,816 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:37:49,658 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:37:50,549 INFO : Traitement terminé
+2023-11-30 16:38:40,693 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:38:41,592 ERROR : cannot access local variable 'f' where it is not associated with a value
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 78, in run
+    self.create_xml(tagIndex,val_array, name_array, file)
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 104, in create_xml
+    f.write(xml_str)
+    ^
+UnboundLocalError: cannot access local variable 'f' where it is not associated with a value
+2023-11-30 16:38:50,941 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:38:51,689 INFO : Traitement terminé
+2023-11-30 16:40:44,995 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:40:45,679 ERROR : list index out of range
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 78, in run
+    self.create_xml(tagIndex,val_array, name_array, file)
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 97, in create_xml
+    field.setAttribute('name', name[j])
+                               ~~~~^^^
+IndexError: list index out of range
+2023-11-30 16:41:02,827 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:41:03,562 ERROR : list index out of range
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 78, in run
+    self.create_xml(tagIndex, val_array, name_array, file)
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 97, in create_xml
+    field.setAttribute('name', name[j])
+                               ~~~~^^^
+IndexError: list index out of range
+2023-11-30 16:41:41,797 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:41:42,467 ERROR : list index out of range
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 78, in run
+    self.create_xml(tagIndex, val_array, name_array, file)
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 97, in create_xml
+    field.setAttribute('name', name[j])
+                               ~~~~^^^
+IndexError: list index out of range
+2023-11-30 16:41:57,252 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:41:57,866 ERROR : list index out of range
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 78, in run
+    self.create_xml(tagIndex, val_array, name_array, file)
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 97, in create_xml
+    field.setAttribute('name', name[j])
+                               ~~~~^^^
+IndexError: list index out of range
