@@ -1,6 +1,7 @@
 import json
 import os
 import xml.etree.ElementTree as ET
+from xml.dom import minidom
 import logging
 
 
@@ -70,12 +71,38 @@ class DbIntegrator:
                         f = open(output_file, 'w')
                         f.writelines(final_content)
                         f.close()
+                        val_array = [val.text for val in root.findall(".//Value/string")]
+                        name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
+                        print(name_array)
                         logging.info('Traitement terminé')
                 else:
                     continue
         except Exception as e:
             logging.exception(e)
             return False
+
+        def create_xml(datas, value, name, file):
+            if datas:
+                root = minidom.Document()
+                xml = root.createElement('root')
+                root.appendChild(xml)
+                for data in datas:
+                    documentChild = root.createElement('document')
+                    xml.appendChild(documentChild)
+                    for j in range(0, len(data)):
+                        field = root.createElement('field')
+                        field.setAttribute('name', name)
+                        field.setAttribute('value', value)
+                        documentChild.appendChild(field)
+                """if not os.path.exists("XML"):
+                    os.mkdir("XML")"""
+                xml_str = root.toprettyxml(indent="\t")
+                if not os.path.exists(file):
+                    f = open(file, "w")
+                f.write(xml_str)
+                f.close()
+            else:
+                return None
 
 
 DbIntegrator().__index__()

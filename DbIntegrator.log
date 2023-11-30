@@ -1,13 +1,46 @@
-2023-11-30 15:22:59,254 INFO : Traitement du fichier files/Client.xml
-2023-11-30 15:22:59,709 INFO : Traitement terminé
-2023-11-30 15:24:00,498 INFO : Traitement du fichier files/Client.xml
-2023-11-30 15:24:00,921 INFO : Traitement terminé
-2023-11-30 15:25:16,532 INFO : Traitement du fichier files/Client.xml
-2023-11-30 15:25:16,642 ERROR : 'Name'
+2023-11-30 15:29:25,312 INFO : Traitement du fichier files/Client.xml
+2023-11-30 15:29:25,757 INFO : Traitement terminé
+2023-11-30 15:30:31,192 INFO : Traitement du fichier files/Client.xml
+2023-11-30 15:30:31,696 INFO : Traitement terminé
+2023-11-30 15:50:00,511 INFO : Traitement du fichier files/Client.xml
+2023-11-30 15:50:00,955 ERROR : 'name'
 Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 54, in run
-    child.attrib['Name'] = self.categories[base][child.attrib['Name']]
-                                                 ~~~~~~~~~~~~^^^^^^^^
-KeyError: 'Name'
-2023-11-30 15:26:10,736 INFO : Traitement du fichier files/Client.xml
-2023-11-30 15:26:11,174 INFO : Traitement terminé
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 75, in run
+    name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
+                  ~~~~~~~~~~^^^^^^^^
+KeyError: 'name'
+2023-11-30 15:50:28,869 INFO : Traitement du fichier files/Client.xml
+2023-11-30 15:50:29,635 ERROR : 'name'
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 75, in run
+    name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
+                  ~~~~~~~~~~^^^^^^^^
+KeyError: 'name'
+2023-11-30 15:50:35,723 INFO : Traitement du fichier files/Client.xml
+2023-11-30 15:50:36,244 ERROR : 'name'
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 75, in run
+    name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
+                  ~~~~~~~~~~^^^^^^^^
+KeyError: 'name'
+2023-11-30 15:50:44,510 INFO : Traitement du fichier files/Client.xml
+2023-11-30 15:50:46,180 ERROR : 'name'
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 75, in run
+    name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
+                  ~~~~~~~~~~^^^^^^^^
+KeyError: 'name'
+2023-11-30 15:50:51,752 INFO : Traitement du fichier files/Client.xml
+2023-11-30 15:50:53,444 ERROR : 'name'
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 75, in run
+    name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
+                  ~~~~~~~~~~^^^^^^^^
+KeyError: 'name'
+2023-11-30 15:51:03,584 INFO : Traitement du fichier files/Client.xml
+2023-11-30 15:51:33,562 ERROR : 'name'
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 75, in run
+    name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
+                  ~~~~~~~~~~^^^^^^^^
+KeyError: 'name'
