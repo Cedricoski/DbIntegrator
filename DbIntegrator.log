@@ -73,3 +73,36 @@ Traceback (most recent call last):
   File "E:\PROJETS\SABC\DbIntegrator\main.py", line 76, in run
     self.create_xml(name_array,val_array,name_array,)
 TypeError: DbIntegrator.create_xml() missing 1 required positional argument: 'file'
+2023-11-30 16:02:38,774 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:02:39,327 ERROR : DbIntegrator.create_xml() missing 1 required positional argument: 'file'
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 76, in run
+    self.create_xml(name_array,val_array,name_array,)
+TypeError: DbIntegrator.create_xml() missing 1 required positional argument: 'file'
+2023-11-30 16:03:05,583 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:03:09,168 INFO : Traitement terminé
+2023-11-30 16:10:18,446 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:10:21,927 ERROR : cannot access local variable 'f' where it is not associated with a value
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 78, in run
+    self.create_xml(name_array, val_array, name_array, file)
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 104, in create_xml
+    f.write(xml_str)
+    ^
+UnboundLocalError: cannot access local variable 'f' where it is not associated with a value
+2023-11-30 16:10:42,186 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:10:42,650 INFO : Traitement terminé
+2023-11-30 16:18:20,743 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:18:20,805 ERROR : list.count() takes exactly one argument (0 given)
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 47, in run
+    print(tagIndex.count())
+          ^^^^^^^^^^^^^^^^
+TypeError: list.count() takes exactly one argument (0 given)
+2023-11-30 16:18:34,014 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:18:34,077 ERROR : list.count() takes exactly one argument (0 given)
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 47, in run
+    print(tagIndex.count())
+          ^^^^^^^^^^^^^^^^
+TypeError: list.count() takes exactly one argument (0 given)

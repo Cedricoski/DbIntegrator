@@ -44,9 +44,10 @@ class DbIntegrator:
                         root = tree.getroot()
                         tagIndex = root.findall(".//Object/Tag/TagIndex")
                         # category = root.findall(".//Object/Tag/TagIndex/Category")
-
+                        print(tagIndex.count())
                         # value = [val.text for val in root.findall(".//Value/string")]
                         for tag in tagIndex:
+
                             category = tag.findall(".//Category")
                             value = tag.findall(".//Value/string")
 
@@ -73,7 +74,8 @@ class DbIntegrator:
                         f.close()
                         val_array = [val.text for val in root.findall(".//Value/string")]
                         name_array = [cat.attrib['Name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
-                        self.create_xml(name_array,val_array,name_array,)
+
+                        #self.create_xml(name_array, val_array, name_array, file)
                         logging.info('Traitement terminé')
                 else:
                     continue
