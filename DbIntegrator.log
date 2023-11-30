@@ -106,3 +106,12 @@ Traceback (most recent call last):
     print(tagIndex.count())
           ^^^^^^^^^^^^^^^^
 TypeError: list.count() takes exactly one argument (0 given)
+2023-11-30 16:18:45,471 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:18:45,539 ERROR : list.count() takes exactly one argument (0 given)
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 47, in run
+    print(tagIndex.count())
+          ^^^^^^^^^^^^^^^^
+TypeError: list.count() takes exactly one argument (0 given)
+2023-11-30 16:19:06,687 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:19:07,136 INFO : Traitement terminé

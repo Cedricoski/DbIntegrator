@@ -44,7 +44,7 @@ class DbIntegrator:
                         root = tree.getroot()
                         tagIndex = root.findall(".//Object/Tag/TagIndex")
                         # category = root.findall(".//Object/Tag/TagIndex/Category")
-                        print(tagIndex.count())
+                        print(len(tagIndex))
                         # value = [val.text for val in root.findall(".//Value/string")]
                         for tag in tagIndex:
 
@@ -75,7 +75,7 @@ class DbIntegrator:
                         val_array = [val.text for val in root.findall(".//Value/string")]
                         name_array = [cat.attrib['Name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
 
-                        #self.create_xml(name_array, val_array, name_array, file)
+                        self.create_xml(name_array, tagIndex, name_array, file)
                         logging.info('Traitement terminé')
                 else:
                     continue
@@ -88,7 +88,7 @@ class DbIntegrator:
             root = minidom.Document()
             xml = root.createElement('root')
             root.appendChild(xml)
-            for data in datas:
+            for i in range(0, len(datas)):
                 documentChild = root.createElement('document')
                 xml.appendChild(documentChild)
                 for j in range(0, len(data)):
