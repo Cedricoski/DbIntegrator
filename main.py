@@ -1,3 +1,4 @@
+import array
 import json
 import os
 import xml.etree.ElementTree as ET
@@ -55,9 +56,9 @@ class DbIntegrator:
                                 number = child.find(".//number")
                                 child.attrib['Name'] = self.categories[base][child.attrib['Name']]
                                 number.text = self.bases['AUTRES'].get(child.attrib['Name'])
-                            for val in value:
-                                val.text = f"Test {str(n)}"
-                            n = n + 1
+                                category_array: array.array.append([child.attrib['Name']])
+                            print(category_array)
+
                         output_file = self.output + '/' + file
                         tree.write(output_file, encoding="UTF-8", xml_declaration=True)
 
@@ -74,8 +75,8 @@ class DbIntegrator:
                         f.close()
                         val_array = [val.text for val in root.findall(".//Value/string")]
                         name_array = [cat.attrib['Name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
+                        self.create_xml(tagIndex, value, val_array, name_array, file)
 
-                        self.create_xml(tagIndex, val_array, name_array, file)
                         logging.info('Traitement terminé')
                 else:
                     continue
@@ -83,22 +84,24 @@ class DbIntegrator:
             logging.exception(e)
             return False
 
-    def create_xml(self, datas, value, name, file):
-        n = 0
+    def create_xml(self, datas, base, value, name, file):
         if datas:
+            n = 0
             root = minidom.Document()
             xml = root.createElement('root')
             root.appendChild(xml)
             for i in range(0, len(datas)):
+
                 documentChild = root.createElement('document')
                 xml.appendChild(documentChild)
-                for j in range(n, n + 10):
+                nb = len(base)
+                for j in range(0, nb):
                     field = root.createElement('field')
                     field.setAttribute('name', name[j])
-                    field.setAttribute('value', value[j])
+                    field.setAttribute('value', value[n])
                     documentChild.appendChild(field)
                     n = n + 1
-            print("yo"+str(n))
+
             """if not os.path.exists("XML"):
                 os.mkdir("XML")"""
             xml_str = root.toprettyxml(indent="\t")

@@ -1,194 +1,75 @@
-2023-11-30 15:29:25,312 INFO : Traitement du fichier files/Client.xml
-2023-11-30 15:29:25,757 INFO : Traitement terminé
-2023-11-30 15:30:31,192 INFO : Traitement du fichier files/Client.xml
-2023-11-30 15:30:31,696 INFO : Traitement terminé
-2023-11-30 15:50:00,511 INFO : Traitement du fichier files/Client.xml
-2023-11-30 15:50:00,955 ERROR : 'name'
+2023-11-30 18:40:23,802 INFO : Traitement du fichier files/Client.xml
+2023-11-30 18:40:24,651 INFO : Traitement terminé
+2023-11-30 18:42:38,948 INFO : Traitement du fichier files/Client.xml
+2023-11-30 18:42:39,705 INFO : Traitement terminé
+2023-11-30 18:45:35,467 INFO : Traitement du fichier files/Client.xml
+2023-11-30 18:45:36,267 ERROR : cannot access local variable 'f' where it is not associated with a value
 Traceback (most recent call last):
   File "E:\PROJETS\SABC\DbIntegrator\main.py", line 75, in run
-    name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
-                  ~~~~~~~~~~^^^^^^^^
-KeyError: 'name'
-2023-11-30 15:50:28,869 INFO : Traitement du fichier files/Client.xml
-2023-11-30 15:50:29,635 ERROR : 'name'
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 75, in run
-    name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
-                  ~~~~~~~~~~^^^^^^^^
-KeyError: 'name'
-2023-11-30 15:50:35,723 INFO : Traitement du fichier files/Client.xml
-2023-11-30 15:50:36,244 ERROR : 'name'
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 75, in run
-    name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
-                  ~~~~~~~~~~^^^^^^^^
-KeyError: 'name'
-2023-11-30 15:50:44,510 INFO : Traitement du fichier files/Client.xml
-2023-11-30 15:50:46,180 ERROR : 'name'
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 75, in run
-    name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
-                  ~~~~~~~~~~^^^^^^^^
-KeyError: 'name'
-2023-11-30 15:50:51,752 INFO : Traitement du fichier files/Client.xml
-2023-11-30 15:50:53,444 ERROR : 'name'
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 75, in run
-    name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
-                  ~~~~~~~~~~^^^^^^^^
-KeyError: 'name'
-2023-11-30 15:51:03,584 INFO : Traitement du fichier files/Client.xml
-2023-11-30 15:51:33,562 ERROR : 'name'
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 75, in run
-    name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
-                  ~~~~~~~~~~^^^^^^^^
-KeyError: 'name'
-2023-11-30 15:51:59,248 INFO : Traitement du fichier files/Client.xml
-2023-11-30 15:51:59,799 ERROR : 'name'
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 75, in run
-    name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
-                  ~~~~~~~~~~^^^^^^^^
-KeyError: 'name'
-2023-11-30 15:52:07,905 INFO : Traitement du fichier files/Client.xml
-2023-11-30 15:52:41,182 INFO : Traitement du fichier files/Client.xml
-2023-11-30 15:52:42,768 ERROR : 'name'
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 75, in run
-    name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
-                  ~~~~~~~~~~^^^^^^^^
-KeyError: 'name'
-2023-11-30 15:52:59,001 INFO : Traitement du fichier files/Client.xml
-2023-11-30 15:53:00,660 ERROR : 'name'
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 75, in run
-    name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
-                  ~~~~~~~~~~^^^^^^^^
-KeyError: 'name'
-2023-11-30 15:53:27,393 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:02:16,657 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:02:17,152 ERROR : DbIntegrator.create_xml() missing 1 required positional argument: 'file'
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 76, in run
-    self.create_xml(name_array,val_array,name_array,)
-TypeError: DbIntegrator.create_xml() missing 1 required positional argument: 'file'
-2023-11-30 16:02:38,774 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:02:39,327 ERROR : DbIntegrator.create_xml() missing 1 required positional argument: 'file'
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 76, in run
-    self.create_xml(name_array,val_array,name_array,)
-TypeError: DbIntegrator.create_xml() missing 1 required positional argument: 'file'
-2023-11-30 16:03:05,583 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:03:09,168 INFO : Traitement terminé
-2023-11-30 16:10:18,446 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:10:21,927 ERROR : cannot access local variable 'f' where it is not associated with a value
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 78, in run
-    self.create_xml(name_array, val_array, name_array, file)
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 104, in create_xml
+    self.create_xml(tagIndex, value, val_array, name_array, file)
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 107, in create_xml
     f.write(xml_str)
     ^
 UnboundLocalError: cannot access local variable 'f' where it is not associated with a value
-2023-11-30 16:10:42,186 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:10:42,650 INFO : Traitement terminé
-2023-11-30 16:18:20,743 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:18:20,805 ERROR : list.count() takes exactly one argument (0 given)
+2023-11-30 18:46:54,717 INFO : Traitement du fichier files/Client.xml
+2023-11-30 18:46:55,526 ERROR : cannot access local variable 'f' where it is not associated with a value
 Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 47, in run
-    print(tagIndex.count())
-          ^^^^^^^^^^^^^^^^
-TypeError: list.count() takes exactly one argument (0 given)
-2023-11-30 16:18:34,014 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:18:34,077 ERROR : list.count() takes exactly one argument (0 given)
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 47, in run
-    print(tagIndex.count())
-          ^^^^^^^^^^^^^^^^
-TypeError: list.count() takes exactly one argument (0 given)
-2023-11-30 16:18:45,471 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:18:45,539 ERROR : list.count() takes exactly one argument (0 given)
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 47, in run
-    print(tagIndex.count())
-          ^^^^^^^^^^^^^^^^
-TypeError: list.count() takes exactly one argument (0 given)
-2023-11-30 16:19:06,687 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:19:07,136 INFO : Traitement terminé
-2023-11-30 16:22:10,074 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:22:10,849 ERROR : name 'data' is not defined
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 78, in run
-    self.create_xml(name_array, tagIndex, name_array, file)
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 94, in create_xml
-    for j in range(0, len(data)):
-                          ^^^^
-NameError: name 'data' is not defined. Did you mean: 'datas'?
-2023-11-30 16:23:47,328 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:23:47,852 ERROR : list index out of range
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 78, in run
-    self.create_xml(name_array, tagIndex, name_array, file)
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 97, in create_xml
-    field.setAttribute('value', value[j])
-                                ~~~~~^^^
-IndexError: list index out of range
-2023-11-30 16:27:54,314 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:27:54,807 ERROR : list index out of range
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 78, in run
-    self.create_xml(name_array, tagIndex, name_array, file)
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 97, in create_xml
-    field.setAttribute('value', value[j])
-                                ~~~~~^^^
-IndexError: list index out of range
-2023-11-30 16:32:08,816 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:37:49,658 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:37:50,549 INFO : Traitement terminé
-2023-11-30 16:38:40,693 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:38:41,592 ERROR : cannot access local variable 'f' where it is not associated with a value
-Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 78, in run
-    self.create_xml(tagIndex,val_array, name_array, file)
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 104, in create_xml
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 77, in run
+    self.create_xml(tagIndex, value, val_array, name_array, file)
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 109, in create_xml
     f.write(xml_str)
     ^
 UnboundLocalError: cannot access local variable 'f' where it is not associated with a value
-2023-11-30 16:38:50,941 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:38:51,689 INFO : Traitement terminé
-2023-11-30 16:40:44,995 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:40:45,679 ERROR : list index out of range
+2023-11-30 18:47:01,033 INFO : Traitement du fichier files/Client.xml
+2023-11-30 18:47:01,864 ERROR : cannot access local variable 'f' where it is not associated with a value
 Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 78, in run
-    self.create_xml(tagIndex,val_array, name_array, file)
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 97, in create_xml
-    field.setAttribute('name', name[j])
-                               ~~~~^^^
-IndexError: list index out of range
-2023-11-30 16:41:02,827 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:41:03,562 ERROR : list index out of range
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 77, in run
+    self.create_xml(tagIndex, value, val_array, name_array, file)
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 109, in create_xml
+    f.write(xml_str)
+    ^
+UnboundLocalError: cannot access local variable 'f' where it is not associated with a value
+2023-11-30 18:47:12,205 INFO : Traitement du fichier files/Client.xml
+2023-11-30 18:47:12,988 ERROR : cannot access local variable 'f' where it is not associated with a value
 Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 78, in run
-    self.create_xml(tagIndex, val_array, name_array, file)
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 97, in create_xml
-    field.setAttribute('name', name[j])
-                               ~~~~^^^
-IndexError: list index out of range
-2023-11-30 16:41:41,797 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:41:42,467 ERROR : list index out of range
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 77, in run
+    self.create_xml(tagIndex, value, val_array, name_array, file)
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 109, in create_xml
+    f.write(xml_str)
+    ^
+UnboundLocalError: cannot access local variable 'f' where it is not associated with a value
+2023-11-30 20:50:04,735 INFO : Traitement du fichier files/Client.xml
+2023-11-30 20:50:04,854 ERROR : cannot access local variable 'category_array' where it is not associated with a value
 Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 78, in run
-    self.create_xml(tagIndex, val_array, name_array, file)
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 97, in create_xml
-    field.setAttribute('name', name[j])
-                               ~~~~^^^
-IndexError: list index out of range
-2023-11-30 16:41:57,252 INFO : Traitement du fichier files/Client.xml
-2023-11-30 16:41:57,866 ERROR : list index out of range
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 60, in run
+    print(category_array)
+          ^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'category_array' where it is not associated with a value
+2023-11-30 20:50:29,584 INFO : Traitement du fichier files/Client.xml
+2023-11-30 20:50:29,649 ERROR : cannot access local variable 'category_array' where it is not associated with a value
 Traceback (most recent call last):
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 78, in run
-    self.create_xml(tagIndex, val_array, name_array, file)
-  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 97, in create_xml
-    field.setAttribute('name', name[j])
-                               ~~~~^^^
-IndexError: list index out of range
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 60, in run
+    print(category_array)
+          ^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'category_array' where it is not associated with a value
+2023-11-30 20:50:46,778 INFO : Traitement du fichier files/Client.xml
+2023-11-30 20:50:46,837 ERROR : cannot access local variable 'category_array' where it is not associated with a value
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 60, in run
+    print(category_array)
+          ^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'category_array' where it is not associated with a value
+2023-11-30 20:51:03,515 INFO : Traitement du fichier files/Client.xml
+2023-11-30 20:51:03,612 ERROR : cannot access local variable 'category_array' where it is not associated with a value
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 60, in run
+    print(category_array)
+          ^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'category_array' where it is not associated with a value
+2023-11-30 20:51:05,321 INFO : Traitement du fichier files/Client.xml
+2023-11-30 20:51:05,406 ERROR : cannot access local variable 'category_array' where it is not associated with a value
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 60, in run
+    print(category_array)
+          ^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'category_array' where it is not associated with a value
