@@ -44,3 +44,32 @@ Traceback (most recent call last):
     name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
                   ~~~~~~~~~~^^^^^^^^
 KeyError: 'name'
+2023-11-30 15:51:59,248 INFO : Traitement du fichier files/Client.xml
+2023-11-30 15:51:59,799 ERROR : 'name'
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 75, in run
+    name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
+                  ~~~~~~~~~~^^^^^^^^
+KeyError: 'name'
+2023-11-30 15:52:07,905 INFO : Traitement du fichier files/Client.xml
+2023-11-30 15:52:41,182 INFO : Traitement du fichier files/Client.xml
+2023-11-30 15:52:42,768 ERROR : 'name'
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 75, in run
+    name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
+                  ~~~~~~~~~~^^^^^^^^
+KeyError: 'name'
+2023-11-30 15:52:59,001 INFO : Traitement du fichier files/Client.xml
+2023-11-30 15:53:00,660 ERROR : 'name'
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 75, in run
+    name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
+                  ~~~~~~~~~~^^^^^^^^
+KeyError: 'name'
+2023-11-30 15:53:27,393 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:02:16,657 INFO : Traitement du fichier files/Client.xml
+2023-11-30 16:02:17,152 ERROR : DbIntegrator.create_xml() missing 1 required positional argument: 'file'
+Traceback (most recent call last):
+  File "E:\PROJETS\SABC\DbIntegrator\main.py", line 76, in run
+    self.create_xml(name_array,val_array,name_array,)
+TypeError: DbIntegrator.create_xml() missing 1 required positional argument: 'file'

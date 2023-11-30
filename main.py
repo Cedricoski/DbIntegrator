@@ -72,8 +72,8 @@ class DbIntegrator:
                         f.writelines(final_content)
                         f.close()
                         val_array = [val.text for val in root.findall(".//Value/string")]
-                        name_array = [cat.attrib['name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
-                        print(name_array)
+                        name_array = [cat.attrib['Name'] for cat in root.findall(".//Object/Tag/TagIndex/Category")]
+                        self.create_xml(name_array,val_array,name_array,)
                         logging.info('Traitement terminé')
                 else:
                     continue
@@ -81,28 +81,28 @@ class DbIntegrator:
             logging.exception(e)
             return False
 
-        def create_xml(datas, value, name, file):
-            if datas:
-                root = minidom.Document()
-                xml = root.createElement('root')
-                root.appendChild(xml)
-                for data in datas:
-                    documentChild = root.createElement('document')
-                    xml.appendChild(documentChild)
-                    for j in range(0, len(data)):
-                        field = root.createElement('field')
-                        field.setAttribute('name', name)
-                        field.setAttribute('value', value)
-                        documentChild.appendChild(field)
-                """if not os.path.exists("XML"):
-                    os.mkdir("XML")"""
-                xml_str = root.toprettyxml(indent="\t")
-                if not os.path.exists(file):
-                    f = open(file, "w")
-                f.write(xml_str)
-                f.close()
-            else:
-                return None
+    def create_xml(self, datas, value, name, file):
+        if datas:
+            root = minidom.Document()
+            xml = root.createElement('root')
+            root.appendChild(xml)
+            for data in datas:
+                documentChild = root.createElement('document')
+                xml.appendChild(documentChild)
+                for j in range(0, len(data)):
+                    field = root.createElement('field')
+                    field.setAttribute('name', name[j])
+                    field.setAttribute('value', value[j])
+                    documentChild.appendChild(field)
+            """if not os.path.exists("XML"):
+                os.mkdir("XML")"""
+            xml_str = root.toprettyxml(indent="\t")
+            if not os.path.exists(file):
+                f = open(file, "w")
+            f.write(xml_str)
+            f.close()
+        else:
+            return None
 
 
 DbIntegrator().__index__()
